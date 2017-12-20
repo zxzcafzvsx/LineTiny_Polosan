@@ -119,48 +119,6 @@ if($message['type']=='text')
 						);
 				
 	}
-	else
-	if($pesan_datang=='7')
-	{
-		
-		$balas = array(
-							'replyToken' => $replyToken,														
-							'messages' => array(
-								array(
-										'type' => 'text',					
-										'text' => 'Testing PUSH pesan ke anda'
-									)
-							)
-						);
-						
-		$push = array(
-							'to' => $userId,									
-							'messages' => array(
-								array(
-										'type' => 'text',					
-										'text' => 'Pesan ini dari medantechno.com'
-									)
-							)
-						);
-						
-		
-		$client->pushMessage($push);
-				
-	}
-
-	else{
-
-		$balas = array(
-							'replyToken' => $replyToken,														
-							'messages' => array(
-								array(
-										'type' => 'text',					
-										'text' => 'Halo.. Selamat datang di medantechno.com .        Untuk testing menu pilih 1,2,3,4,5 ... atau stiker'
-									)
-							)
-						);
-						
-	}
 
 }
  
